@@ -1,0 +1,15 @@
+:root {
+    /*---------------------------- Variable for font family ---------------------------------  */
+    --font-family: "Roboto", serif;
+
+    /* --------------------------- Variable for colors  --------------------------------------- */
+    --theme-white: #FFFFFF;
+    --theme-black: #000000;
+    --theme-dark-blue: #041638;
+    --theme-gray: #00000029;
+    --theme-blue: #0058FF;
+
+    /* ---------------------------- Variable for Shadow ------------------------------------------ */
+    --cards-shadow: 0px 0px 12px #00000029;
+    --header-shadow: 0px 3px 6px #00000029;
+}

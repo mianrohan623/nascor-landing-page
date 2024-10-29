@@ -1,0 +1,246 @@
+/* ------------------------------------ Import Roboto Font from google fonts ------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ------------------------------------- Import variables from variable.css --------------------------------- */
+@import url("/assets/css/variable.css");
+
+
+/* --------------------------------------  Custom Css -------------------------------------------------------- */
+
+* {
+    font-family: var(--font-family) !important;
+    box-sizing: border-box !important;
+}
+
+/* class for adding theme blue color */
+.theme-blue {
+    color: var(--theme-blue) !important;
+}
+
+/* class for adding theme blue background color */
+.theme-bg-blue {
+    background-color: var(--theme-blue) !important;
+}
+
+/* class for font size 18px */
+
+.fs-18 {
+    font-size: 18px !important;
+}
+
+/* class for cards shadow */
+
+.card-shadow {
+    box-shadow: var(--cards-shadow) !important;
+}
+
+/* styling for header */
+
+
+
+/* styling for contact btn */
+
+.contact-btn {
+    background-color: var(--theme-blue) !important;
+    color: white !important;
+    border: none !important;
+    padding: 18px 20px !important;
+    border-radius: 0 !important;
+    cursor: pointer;
+}
+
+/* This is header css */
+header {
+    box-shadow: var(--header-shadow);
+    background-color: var(--theme-white);
+}
+
+header .navbar-toggler:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+}
+
+section {
+    padding: 64px 0;
+}
+
+section h1 {
+    font-size: 48px;
+    margin-bottom: 24px;
+    text-transform: capitalize;
+}
+
+/* This is section 1 banner section */
+section.first-section {
+    background-color: var(--theme-dark-blue);
+}
+
+section.first-section h1 {
+    font-size: 56px;
+    margin-bottom: 36px;
+}
+
+section.first-section .list-disc-wrapper {
+    margin-top: 30px;
+}
+
+section.first-section .list-disc-wrapper:first-of-type {
+    margin-top: 38px;
+}
+
+section.first-section .list-disc-wrapper .img-wrapper {
+    width: 72px;
+    height: 72px;
+}
+
+section.first-section .list-disc-wrapper .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+section.first-section .banner-img-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+section.first-section .banner-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+/* This is service section */
+
+section.services-section .service-card .img-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+section.services-section .service-card .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+section.services-section .service-card.card-2 .img-wrapper {
+    width: auto;
+    height: 100%;
+}
+
+section.services-section .service-card.card-2 .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* This is choose us section */
+section.choose-us-section {
+    background-color: var(--theme-dark-blue);
+}
+
+section.choose-us-section h1 {
+    margin-bottom: 64px;
+}
+
+section.choose-us-section .specification-wraper .img-wrapper {
+    width: 70px;
+    height: 70px;
+}
+
+section.choose-us-section .specification-wraper .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#shadow-host-companion {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* ---------------------------------------------- This is footer ---------------------------------------- */
+
+footer {
+    background-color: var(--theme-dark-blue) !important;
+    padding: 38px 0;
+}
+
+footer .footer-link-list {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Footer  */
+footer .footer-link-list li>a {
+    font-size: 12px !important;
+
+}
+
+footer p.text-wrapper {
+    font-size: 12px !important;
+}
+
+/* This is media query for responsive design */
+@media (max-width: 1024px) {
+    header .big-screen-menu {
+        width: 68% !important;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    section {
+        padding: 40px 0;
+    }
+
+    section h1 {
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+
+    /* first section */
+    section.first-section h1 {
+        font-size: 40px;
+        margin-bottom: 36px;
+    }
+
+    section.first-section h1>br {
+        display: none;
+    }
+
+    /* service section */
+    section.services-section .service-card .h4 {
+        font-size: 24px;
+    }
+
+    section.services-section .service-card.card-2 .img-wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    section.services-section .service-card.card-2 .img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* This is contact us section */
+    section.contact-us-section .details-wraper {
+        width: 100% !important;
+    }
+
+    /* Footer  */
+    footer p.text-wrapper>a {
+        font-size: 12px !important;
+        color: #81FFF5 !important;
+    }
+}
